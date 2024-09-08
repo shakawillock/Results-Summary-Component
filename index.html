@@ -4,37 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
+  <div class="container container-flex">
+    <section class="results-summary-component">
+      <h3 class="result-summary-title">Your Result</h3>
+      <div class="result-summary">
+        <p class="result-amount">76</p>
+        <p class="result-max">100</p>
+      </div>
+      <h2 class="results-rating-title">Great</h2>
+      <p class="results-info">  You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </section>
 
-  Your Result
-  76
-  of 100
+    <section class="summary">
+      <h3 class="summary-main-title">Summary</h3>
+      <div class="wrapper">
+        <h3 class="summary-title">
+          <span><img src="images/icon-reaction.svg" alt="Thunderbolt"></span>
+          Reaction
+        </h3>
+        <p class="summary-total"><span class="summary-total-amount">80</span> / 100</p>
+      </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div class="wrapper">
+        <h3 class="summary-title">
+          <span><img src="images/icon-memory.svg" alt="Brain icon"></span>
+          Memory
+        </h3>
+        <p class="summary-total"><span class="summary-total-amount">92</span> / 100</p>
+      </div>
 
-  Reaction
-  80 / 100
+      <div class="wrapper">
+        <h3 class="summary-title">
+          <span><img src="images/icon-verbal.svg" alt="Verbal icon"></span>
+          Verbal
+        </h3>
+        <p class="summary-total"><span class="summary-total-amount">61</span> / 100</p>
+      </div>
 
-  Memory
-  92 / 100
+      <div class="wrapper">
+        <h3 class="summary-title">
+          <span><img src="images/icon-visual.svg" alt="Visual icon"></span>
+            Visual
+        </h3>
+        <p class="summary-total"><span class="summary-total-amount">72</span> / 100</p>
+      </div>
 
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/shakawillock" target="_blank">Shaka Willock</a>.
+      <button class="btn btn-continue">Continue</button>
+    </section>
   </div>
+
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/shakawillock" target="_blank">Shaka Willock</a>.
+    </div>
+  </footer>
 </body>
 </html>
